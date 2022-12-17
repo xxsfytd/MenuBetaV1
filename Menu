@@ -1,0 +1,582 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SCREENIE = Instance.new("ScreenGui")
+local Activate = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local FeScriptButton = Instance.new("TextButton")
+local VisualScriptButton = Instance.new("TextButton")
+local AdminScriptButton = Instance.new("TextButton")
+local FeScripts = Instance.new("ScrollingFrame")
+local ServerAdmin = Instance.new("TextButton")
+local Ender = Instance.new("TextButton")
+local Xester = Instance.new("TextButton")
+local Joy = Instance.new("TextButton")
+local Sonic = Instance.new("TextButton")
+local UIGridLayout = Instance.new("UIGridLayout")
+local TextLabel_2 = Instance.new("TextLabel")
+local VisualScripts = Instance.new("ScrollingFrame")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local EnderV2 = Instance.new("TextButton")
+local Xester_2 = Instance.new("TextButton")
+local Gunjourer = Instance.new("TextButton")
+local ArchAngel = Instance.new("TextButton")
+local Illuminati = Instance.new("TextButton")
+local AdminScripts = Instance.new("ScrollingFrame")
+local UIGridLayout_3 = Instance.new("UIGridLayout")
+local InfiniteYield = Instance.new("TextButton")
+local LegendaryAdmin = Instance.new("TextButton")
+local CmdX = Instance.new("TextButton")
+local FatesAdmin = Instance.new("TextButton")
+local RevizAdmin = Instance.new("TextButton")
+local DeActivate = Instance.new("TextButton")
+
+--Properties:
+
+SCREENIE.Name = "SCREENIE"
+SCREENIE.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SCREENIE.ResetOnSpawn = false
+
+Activate.Name = "Activate"
+Activate.Parent = SCREENIE
+Activate.BackgroundColor3 = Color3.fromRGB(145, 145, 145)
+Activate.BorderColor3 = Color3.fromRGB(145, 145, 145)
+Activate.Position = UDim2.new(0.403578579, 0, 0.865461886, 0)
+Activate.Size = UDim2.new(0, 200, 0, 50)
+Activate.Font = Enum.Font.Cartoon
+Activate.Text = "Open"
+Activate.TextColor3 = Color3.fromRGB(0, 0, 0)
+Activate.TextScaled = true
+Activate.TextSize = 14.000
+Activate.TextWrapped = true
+
+Frame.Parent = SCREENIE
+Frame.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
+Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame.Position = UDim2.new(0.328000009, 0, 0.999000013, 0)
+Frame.Size = UDim2.new(0, 400, 0, 233)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0.0149999857, 0, 0.0257510766, 0)
+TextLabel.Size = UDim2.new(0, 94, 0, 33)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Project Menu"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+FeScriptButton.Name = "FeScriptButton"
+FeScriptButton.Parent = Frame
+FeScriptButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FeScriptButton.Position = UDim2.new(0.0149999997, 0, 0.283261776, 0)
+FeScriptButton.Size = UDim2.new(0, 94, 0, 26)
+FeScriptButton.Font = Enum.Font.SourceSans
+FeScriptButton.Text = "Fe Scripts"
+FeScriptButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+FeScriptButton.TextSize = 14.000
+
+VisualScriptButton.Name = "VisualScriptButton"
+VisualScriptButton.Parent = Frame
+VisualScriptButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisualScriptButton.Position = UDim2.new(0.0149999997, 0, 0.440669537, 0)
+VisualScriptButton.Size = UDim2.new(0, 94, 0, 26)
+VisualScriptButton.Font = Enum.Font.SourceSans
+VisualScriptButton.Text = "Visual Scripts"
+VisualScriptButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+VisualScriptButton.TextSize = 14.000
+
+AdminScriptButton.Name = "AdminScriptButton"
+AdminScriptButton.Parent = Frame
+AdminScriptButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdminScriptButton.Position = UDim2.new(0.0149999997, 0, 0.607296169, 0)
+AdminScriptButton.Size = UDim2.new(0, 94, 0, 26)
+AdminScriptButton.Font = Enum.Font.SourceSans
+AdminScriptButton.Text = "Admin Scripts"
+AdminScriptButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AdminScriptButton.TextSize = 14.000
+
+FeScripts.Name = "FeScripts"
+FeScripts.Parent = Frame
+FeScripts.Active = true
+FeScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FeScripts.Position = UDim2.new(0.289999992, 0, 0.278969944, 0)
+FeScripts.Size = UDim2.new(0, 273, 0, 157)
+FeScripts.Visible = false
+FeScripts.CanvasSize = UDim2.new(0, 0, 5, 0)
+FeScripts.ScrollBarThickness = 5
+
+ServerAdmin.Name = "Server Admin"
+ServerAdmin.Parent = FeScripts
+ServerAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ServerAdmin.Position = UDim2.new(0, 0, -0.000500387279, 0)
+ServerAdmin.Size = UDim2.new(0, 61, 0, 38)
+ServerAdmin.Font = Enum.Font.SourceSans
+ServerAdmin.Text = "Server Admin"
+ServerAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
+ServerAdmin.TextScaled = true
+ServerAdmin.TextSize = 14.000
+ServerAdmin.TextWrapped = true
+
+Ender.Name = "Ender"
+Ender.Parent = FeScripts
+Ender.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ender.Position = UDim2.new(0, 0, -0.000500387279, 0)
+Ender.Size = UDim2.new(0, 61, 0, 38)
+Ender.Font = Enum.Font.SourceSans
+Ender.Text = "Ender"
+Ender.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ender.TextScaled = true
+Ender.TextSize = 14.000
+Ender.TextWrapped = true
+
+Xester.Name = "Xester"
+Xester.Parent = FeScripts
+Xester.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Xester.Position = UDim2.new(0, 0, -0.000500387279, 0)
+Xester.Size = UDim2.new(0, 61, 0, 38)
+Xester.Font = Enum.Font.SourceSans
+Xester.Text = "Xester"
+Xester.TextColor3 = Color3.fromRGB(0, 0, 0)
+Xester.TextScaled = true
+Xester.TextSize = 14.000
+Xester.TextWrapped = true
+
+Joy.Name = "Joy"
+Joy.Parent = FeScripts
+Joy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Joy.Position = UDim2.new(0, 0, -0.000500387279, 0)
+Joy.Size = UDim2.new(0, 61, 0, 38)
+Joy.Font = Enum.Font.SourceSans
+Joy.Text = "Joy"
+Joy.TextColor3 = Color3.fromRGB(0, 0, 0)
+Joy.TextScaled = true
+Joy.TextSize = 14.000
+Joy.TextWrapped = true
+
+Sonic.Name = "Sonic"
+Sonic.Parent = FeScripts
+Sonic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sonic.Position = UDim2.new(0, 0, -0.000500387279, 0)
+Sonic.Size = UDim2.new(0, 61, 0, 38)
+Sonic.Font = Enum.Font.SourceSans
+Sonic.Text = "Sonic"
+Sonic.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sonic.TextScaled = true
+Sonic.TextSize = 14.000
+Sonic.TextWrapped = true
+
+UIGridLayout.Parent = FeScripts
+UIGridLayout.CellSize = UDim2.new(0, 40, 0, 50)
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.Position = UDim2.new(0.267500013, 0, 0.0987124443, 0)
+TextLabel_2.Size = UDim2.new(0, 43, 0, 16)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "V1.0"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+VisualScripts.Name = "VisualScripts"
+VisualScripts.Parent = Frame
+VisualScripts.Active = true
+VisualScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisualScripts.Position = UDim2.new(0.289999992, 0, 0.278969944, 0)
+VisualScripts.Size = UDim2.new(0, 273, 0, 157)
+VisualScripts.Visible = false
+VisualScripts.CanvasSize = UDim2.new(0, 0, 5, 0)
+VisualScripts.ScrollBarThickness = 5
+
+UIGridLayout_2.Parent = VisualScripts
+UIGridLayout_2.CellSize = UDim2.new(0, 40, 0, 50)
+
+EnderV2.Name = "Ender V2"
+EnderV2.Parent = VisualScripts
+EnderV2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EnderV2.Position = UDim2.new(0, 0, -0.000500387279, 0)
+EnderV2.Size = UDim2.new(0, 61, 0, 38)
+EnderV2.Font = Enum.Font.SourceSans
+EnderV2.Text = "Ender V2"
+EnderV2.TextColor3 = Color3.fromRGB(0, 0, 0)
+EnderV2.TextScaled = true
+EnderV2.TextSize = 14.000
+EnderV2.TextWrapped = true
+
+Xester_2.Name = "Xester"
+Xester_2.Parent = VisualScripts
+Xester_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Xester_2.Position = UDim2.new(0, 0, -0.000500387279, 0)
+Xester_2.Size = UDim2.new(0, 61, 0, 38)
+Xester_2.Font = Enum.Font.SourceSans
+Xester_2.Text = "Xester"
+Xester_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Xester_2.TextScaled = true
+Xester_2.TextSize = 14.000
+Xester_2.TextWrapped = true
+
+Gunjourer.Name = "Gunjourer"
+Gunjourer.Parent = VisualScripts
+Gunjourer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gunjourer.Position = UDim2.new(0, 0, -0.000500387279, 0)
+Gunjourer.Size = UDim2.new(0, 61, 0, 38)
+Gunjourer.Font = Enum.Font.SourceSans
+Gunjourer.Text = "Gunjourer"
+Gunjourer.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gunjourer.TextScaled = true
+Gunjourer.TextSize = 14.000
+Gunjourer.TextWrapped = true
+
+ArchAngel.Name = "Arch Angel"
+ArchAngel.Parent = VisualScripts
+ArchAngel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ArchAngel.Position = UDim2.new(0, 0, -0.000500387279, 0)
+ArchAngel.Size = UDim2.new(0, 61, 0, 38)
+ArchAngel.Font = Enum.Font.SourceSans
+ArchAngel.Text = "Arch Angel"
+ArchAngel.TextColor3 = Color3.fromRGB(0, 0, 0)
+ArchAngel.TextScaled = true
+ArchAngel.TextSize = 14.000
+ArchAngel.TextWrapped = true
+
+Illuminati.Name = "Illuminati"
+Illuminati.Parent = VisualScripts
+Illuminati.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Illuminati.Position = UDim2.new(0, 0, -0.000500387279, 0)
+Illuminati.Size = UDim2.new(0, 61, 0, 38)
+Illuminati.Font = Enum.Font.SourceSans
+Illuminati.Text = "Illuminati"
+Illuminati.TextColor3 = Color3.fromRGB(0, 0, 0)
+Illuminati.TextScaled = true
+Illuminati.TextSize = 14.000
+Illuminati.TextWrapped = true
+
+AdminScripts.Name = "AdminScripts"
+AdminScripts.Parent = Frame
+AdminScripts.Active = true
+AdminScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdminScripts.Position = UDim2.new(0.289999992, 0, 0.278969944, 0)
+AdminScripts.Size = UDim2.new(0, 273, 0, 157)
+AdminScripts.Visible = false
+AdminScripts.CanvasSize = UDim2.new(0, 0, 5, 0)
+AdminScripts.ScrollBarThickness = 5
+
+UIGridLayout_3.Parent = AdminScripts
+UIGridLayout_3.CellSize = UDim2.new(0, 40, 0, 50)
+
+InfiniteYield.Name = "Infinite Yield"
+InfiniteYield.Parent = AdminScripts
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.Position = UDim2.new(0, 0, -0.000500387279, 0)
+InfiniteYield.Size = UDim2.new(0, 61, 0, 38)
+InfiniteYield.Font = Enum.Font.SourceSans
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.TextScaled = true
+InfiniteYield.TextSize = 14.000
+InfiniteYield.TextWrapped = true
+
+LegendaryAdmin.Name = "Legendary Admin"
+LegendaryAdmin.Parent = AdminScripts
+LegendaryAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LegendaryAdmin.Position = UDim2.new(0, 0, -0.000500387279, 0)
+LegendaryAdmin.Size = UDim2.new(0, 61, 0, 38)
+LegendaryAdmin.Font = Enum.Font.SourceSans
+LegendaryAdmin.Text = "Legendary Admin"
+LegendaryAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
+LegendaryAdmin.TextScaled = true
+LegendaryAdmin.TextSize = 14.000
+LegendaryAdmin.TextWrapped = true
+
+CmdX.Name = "Cmd-X"
+CmdX.Parent = AdminScripts
+CmdX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CmdX.Position = UDim2.new(0, 0, -0.000500387279, 0)
+CmdX.Size = UDim2.new(0, 61, 0, 38)
+CmdX.Font = Enum.Font.SourceSans
+CmdX.Text = "Cmd-X"
+CmdX.TextColor3 = Color3.fromRGB(0, 0, 0)
+CmdX.TextScaled = true
+CmdX.TextSize = 14.000
+CmdX.TextWrapped = true
+
+FatesAdmin.Name = "Fates Admin"
+FatesAdmin.Parent = AdminScripts
+FatesAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FatesAdmin.Position = UDim2.new(0, 0, -0.000500387279, 0)
+FatesAdmin.Size = UDim2.new(0, 61, 0, 38)
+FatesAdmin.Font = Enum.Font.SourceSans
+FatesAdmin.Text = "Fates Admin"
+FatesAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
+FatesAdmin.TextScaled = true
+FatesAdmin.TextSize = 14.000
+FatesAdmin.TextWrapped = true
+
+RevizAdmin.Name = "Reviz Admin"
+RevizAdmin.Parent = AdminScripts
+RevizAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RevizAdmin.Position = UDim2.new(0, 0, -0.000500387279, 0)
+RevizAdmin.Size = UDim2.new(0, 61, 0, 38)
+RevizAdmin.Font = Enum.Font.SourceSans
+RevizAdmin.Text = "Reviz Admin"
+RevizAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
+RevizAdmin.TextScaled = true
+RevizAdmin.TextSize = 14.000
+RevizAdmin.TextWrapped = true
+
+DeActivate.Name = "DeActivate"
+DeActivate.Parent = Frame
+DeActivate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DeActivate.Position = UDim2.new(0.875, 0, 0, 0)
+DeActivate.Size = UDim2.new(0, 50, 0, 42)
+DeActivate.Font = Enum.Font.SourceSans
+DeActivate.Text = "Close"
+DeActivate.TextColor3 = Color3.fromRGB(0, 0, 0)
+DeActivate.TextSize = 14.000
+
+-- Scripts:
+
+local function TXRORCV_fake_script() -- Activate.LocalScript 
+	local script = Instance.new('LocalScript', Activate)
+
+	function click()
+		script.Parent.Parent.Frame.Visible = true
+		script.Parent.Parent.Frame:TweenPosition(
+			
+			UDim2.new(0.328, 0,0.250, 0),
+			"InOut",
+			"Quad",
+			1,
+			false
+			
+		)
+		
+	end
+	script.Parent.MouseButton1Click:Connect(click)
+end
+coroutine.wrap(TXRORCV_fake_script)()
+local function CISR_fake_script() -- Activate.LocalScript 
+	local script = Instance.new('LocalScript', Activate)
+
+	function click()
+		script.Parent.Parent.Activate.Visible = true
+		script.Parent.Parent.Activate:TweenPosition(
+	
+			UDim2.new(0.405, 0,0.999, 0),
+			"InOut",
+			"Quad",
+			1,
+			false
+	
+		)
+	
+	end
+	script.Parent.MouseButton1Click:Connect(click)
+end
+coroutine.wrap(CISR_fake_script)()
+local function QDBUH_fake_script() -- FeScriptButton.LocalScript 
+	local script = Instance.new('LocalScript', FeScriptButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.FeScripts.Visible = true
+		script.Parent.Parent.VisualScripts.Visible = false
+		script.Parent.Parent.AdminScripts.Visible = false
+	end)
+	
+end
+coroutine.wrap(QDBUH_fake_script)()
+local function TTBO_fake_script() -- VisualScriptButton.LocalScript 
+	local script = Instance.new('LocalScript', VisualScriptButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.FeScripts.Visible = false
+		script.Parent.Parent.VisualScripts.Visible = true
+		script.Parent.Parent.AdminScripts.Visible = false
+	end)
+end
+coroutine.wrap(TTBO_fake_script)()
+local function EQFVXP_fake_script() -- AdminScriptButton.LocalScript 
+	local script = Instance.new('LocalScript', AdminScriptButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.FeScripts.Visible = false
+		script.Parent.Parent.VisualScripts.Visible = false
+		script.Parent.Parent.AdminScripts.Visible = true
+	end)
+end
+coroutine.wrap(EQFVXP_fake_script)()
+local function ZPRH_fake_script() -- ServerAdmin.LocalScript 
+	local script = Instance.new('LocalScript', ServerAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    loadstring(game:HttpGet("https://pastebin.com/raw/AQAKj420"))() -- server admin
+	end)
+	
+end
+coroutine.wrap(ZPRH_fake_script)()
+local function HVVKYO_fake_script() -- Ender.LocalScript 
+	local script = Instance.new('LocalScript', Ender)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/PQGzTpYm'))() -- ender
+	end)
+	
+end
+coroutine.wrap(HVVKYO_fake_script)()
+local function ETVX_fake_script() -- Xester.LocalScript 
+	local script = Instance.new('LocalScript', Xester)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/RPwyPvEi"))() -- xester
+	end)
+	
+end
+coroutine.wrap(ETVX_fake_script)()
+local function OBYVL_fake_script() -- Joy.LocalScript 
+	local script = Instance.new('LocalScript', Joy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/LEAQuKj0"))() -- joy
+	end)
+	
+end
+coroutine.wrap(OBYVL_fake_script)()
+local function XGYVYAI_fake_script() -- Sonic.LocalScript 
+	local script = Instance.new('LocalScript', Sonic)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/K7YSDZsB'))() -- sonic
+	end)
+	
+end
+coroutine.wrap(XGYVYAI_fake_script)()
+local function RVYHBU_fake_script() -- EnderV2.LocalScript 
+	local script = Instance.new('LocalScript', EnderV2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/w7VLxJJM'))()
+	end)
+	
+end
+coroutine.wrap(RVYHBU_fake_script)()
+local function WKKTVIC_fake_script() -- Xester_2.LocalScript 
+	local script = Instance.new('LocalScript', Xester_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/1p9gSWK4'))()
+	end)
+	
+end
+coroutine.wrap(WKKTVIC_fake_script)()
+local function TSSZHW_fake_script() -- Gunjourer.LocalScript 
+	local script = Instance.new('LocalScript', Gunjourer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/EMhvbpCg'))()
+	end)
+	
+end
+coroutine.wrap(TSSZHW_fake_script)()
+local function HTNR_fake_script() -- ArchAngel.LocalScript 
+	local script = Instance.new('LocalScript', ArchAngel)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/pUbrEfGS'))()
+	end)
+	
+end
+coroutine.wrap(HTNR_fake_script)()
+local function LBHTX_fake_script() -- Illuminati.LocalScript 
+	local script = Instance.new('LocalScript', Illuminati)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/xKeeFngN'))()
+	end)
+	
+end
+coroutine.wrap(LBHTX_fake_script)()
+local function ZWSNL_fake_script() -- InfiniteYield.LocalScript 
+	local script = Instance.new('LocalScript', InfiniteYield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() -- Infinite Yield
+	end)
+	
+end
+coroutine.wrap(ZWSNL_fake_script)()
+local function ERWXCF_fake_script() -- LegendaryAdmin.LocalScript 
+	local script = Instance.new('LocalScript', LegendaryAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() -- Legendary Admin
+	end)
+end
+coroutine.wrap(ERWXCF_fake_script)()
+local function QZJSOT_fake_script() -- CmdX.LocalScript 
+	local script = Instance.new('LocalScript', CmdX)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))() -- Cmd-X
+	end)
+end
+coroutine.wrap(QZJSOT_fake_script)()
+local function MOIRN_fake_script() -- FatesAdmin.LocalScript 
+	local script = Instance.new('LocalScript', FatesAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))(); -- Fates Admin
+	end)
+end
+coroutine.wrap(MOIRN_fake_script)()
+local function ROZEEL_fake_script() -- RevizAdmin.LocalScript 
+	local script = Instance.new('LocalScript', RevizAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/pyzjWNhk'),true))() -- Revis Admin
+	end)
+end
+coroutine.wrap(ROZEEL_fake_script)()
+local function XQVNZN_fake_script() -- DeActivate.LocalScript 
+	local script = Instance.new('LocalScript', DeActivate)
+
+	function click()
+		script.Parent.Parent.Parent.Frame.Visible = true
+		script.Parent.Parent.Parent.Frame:TweenPosition(
+	
+			UDim2.new(0.328, 0,0.999, 0),
+			"InOut",
+			"Quad",
+			1,
+			false
+	
+		)
+	
+	end
+	script.Parent.MouseButton1Click:Connect(click)
+end
+coroutine.wrap(XQVNZN_fake_script)()
+local function TJXGN_fake_script() -- DeActivate.LocalScript 
+	local script = Instance.new('LocalScript', DeActivate)
+
+	function click()
+		script.Parent.Parent.Parent.Activate.Visible = true
+		script.Parent.Parent.Parent.Activate:TweenPosition(
+	
+			UDim2.new(0.405, 0,0.865, 0),
+			"InOut",
+			"Quad",
+			1,
+			false
+	
+		)
+	
+	end
+	script.Parent.MouseButton1Click:Connect(click)
+end
+coroutine.wrap(TJXGN_fake_script)()
